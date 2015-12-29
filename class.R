@@ -1,0 +1,26 @@
+rm(list=ls(all=TRUE));
+library(arules);
+source("rule.R");
+totalRule <- NULL;
+rule1 <- rule(sup = 0.017,conf = 1);
+uni <- rule1[[2]];
+totalRule <- rule1[[1]];
+data <- data[-uni,];
+rule2 <- rule(sup = 0.02,conf = 1);
+uni <- rule2[[2]];
+totalRule <- c(totalRule,rule2[[1]]);
+data <- data[-uni,];
+rule3 <- rule(sup = 0.05,conf = 1);
+uni <- rule3[[2]];
+totalRule <- c(totalRule,rule3[[1]]);
+data <- data[-uni,];
+rule4 <- rule(sup = 0.06,conf = 1);
+uni <- rule4[[2]];
+totalRule <- c(totalRule,rule4[[1]]);
+data <- data[-uni,];
+rule5 <- rule(sup = 0.2,conf = 1);
+uni <- rule5[[2]];
+totalRule <- c(totalRule,rule5[[1]]);
+data <- data[-uni,];
+
+inspect(totalRule);
