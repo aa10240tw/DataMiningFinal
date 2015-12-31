@@ -1,0 +1,128 @@
+   lhs                 rhs              support confidence      lift
+1  {safety=low}     => {class=unacc} 0.33256083  1.0000000 1.4101307
+2  {persons=2}      => {class=unacc} 0.33256083  1.0000000 1.4101307
+3  {buying=vhigh,                                                   
+    maint=vhigh}    => {class=unacc} 0.06141367  1.0000000 1.4101307
+4  {buying=vhigh,                                                   
+    maint=high}     => {class=unacc} 0.06257242  1.0000000 1.4101307
+5  {buying=high,                                                    
+    maint=vhigh}    => {class=unacc} 0.06257242  1.0000000 1.4101307
+6  {buying=vhigh,                                                   
+    doors=2,                                                        
+    lug_boot=small} => {class=unacc} 0.02201622  1.0000000 1.4101307
+7  {buying=vhigh,                                                   
+    lug_boot=small,                                                 
+    safety=med}     => {class=unacc} 0.02780997  1.0000000 1.4101307
+8  {maint=vhigh,                                                    
+    doors=2,                                                        
+    lug_boot=small} => {class=unacc} 0.02201622  1.0000000 1.4101307
+9  {maint=vhigh,                                                    
+    lug_boot=small,                                                 
+    safety=med}     => {class=unacc} 0.02780997  1.0000000 1.4101307
+10 {buying=high,                                                    
+    doors=2,                                                        
+    lug_boot=small} => {class=unacc} 0.02317497  1.0000000 1.4101307
+11 {buying=high,                                                    
+    lug_boot=small,                                                 
+    safety=med}     => {class=unacc} 0.02780997  1.0000000 1.4101307
+12 {doors=2,                                                        
+    persons=more,                                                   
+    lug_boot=small} => {class=unacc} 0.03707995  1.0000000 1.4101307
+13 {doors=2,                                                        
+    lug_boot=small,                                                 
+    safety=high}    => {class=unacc} 0.03707995  1.0000000 1.4101307
+14 {maint=high,                                                     
+    doors=2,                                                        
+    lug_boot=small} => {class=unacc} 0.02201622  0.9500000 1.3396242
+15 {doors=2,                                                        
+    lug_boot=small} => {class=unacc} 0.08574739  0.9367089 1.3208819
+16 {buying=vhigh,                                                   
+    persons=more,                                                   
+    lug_boot=small} => {class=unacc} 0.02549247  0.9166667 1.2926198
+17 {maint=vhigh,                                                    
+    persons=more,                                                   
+    lug_boot=small} => {class=unacc} 0.02549247  0.9166667 1.2926198
+18 {buying=vhigh,                                                   
+    lug_boot=small} => {class=unacc} 0.07531866  0.9154930 1.2909647
+19 {maint=vhigh,                                                    
+    lug_boot=small} => {class=unacc} 0.07531866  0.9154930 1.2909647
+20 {buying=vhigh,                                                   
+    doors=3,                                                        
+    safety=med}     => {class=unacc} 0.02085747  0.9000000 1.2691176
+21 {buying=vhigh,                                                   
+    doors=3,                                                        
+    lug_boot=med}   => {class=unacc} 0.02085747  0.9000000 1.2691176
+22 {maint=vhigh,                                                    
+    doors=3,                                                        
+    safety=med}     => {class=unacc} 0.02085747  0.9000000 1.2691176
+23 {maint=vhigh,                                                    
+    doors=3,                                                        
+    lug_boot=med}   => {class=unacc} 0.02085747  0.9000000 1.2691176
+24 {buying=vhigh,                                                   
+    doors=2,                                                        
+    persons=more}   => {class=unacc} 0.02085747  0.9000000 1.2691176
+25 {maint=vhigh,                                                    
+    doors=2,                                                        
+    persons=more}   => {class=unacc} 0.02085747  0.9000000 1.2691176
+26 {buying=vhigh,                                                   
+    doors=2}        => {class=unacc} 0.05677868  0.8909091 1.2562983
+27 {maint=vhigh,                                                    
+    doors=2}        => {class=unacc} 0.05677868  0.8909091 1.2562983
+28 {buying=high,                                                    
+    lug_boot=small} => {class=unacc} 0.07300116  0.8750000 1.2338644
+29 {buying=high,                                                    
+    doors=3,                                                        
+    safety=med}     => {class=unacc} 0.01969873  0.8500000 1.1986111
+30 {buying=high,                                                    
+    doors=3,                                                        
+    lug_boot=med}   => {class=unacc} 0.01969873  0.8500000 1.1986111
+31 {buying=high,                                                    
+    doors=2,                                                        
+    persons=more}   => {class=unacc} 0.01969873  0.8500000 1.1986111
+32 {buying=vhigh,                                                   
+    doors=3}        => {class=unacc} 0.05098494  0.8461538 1.1931875
+33 {maint=vhigh,                                                    
+    doors=3}        => {class=unacc} 0.05098494  0.8461538 1.1931875
+34 {doors=5more,                                                    
+    lug_boot=small,                                                 
+    safety=med}     => {class=unacc} 0.03128621  0.8437500 1.1897978
+35 {doors=3,                                                        
+    lug_boot=small,                                                 
+    safety=med}     => {class=unacc} 0.03128621  0.8437500 1.1897978
+36 {doors=2,                                                        
+    lug_boot=med,                                                   
+    safety=med}     => {class=unacc} 0.03128621  0.8437500 1.1897978
+37 {buying=vhigh}   => {class=unacc} 0.20973349  0.8418605 1.1871333
+38 {maint=vhigh}    => {class=unacc} 0.20973349  0.8418605 1.1871333
+39 {buying=high,                                                    
+    doors=2}        => {class=unacc} 0.05446118  0.8392857 1.1835026
+40 {buying=med,                                                     
+    maint=high,                                                     
+    lug_boot=small} => {class=unacc} 0.01738123  0.8333333 1.1751089
+41 {maint=high,                                                     
+    lug_boot=small,                                                 
+    safety=med}     => {class=unacc} 0.02317497  0.8333333 1.1751089
+42 {maint=high,                                                     
+    lug_boot=small} => {class=unacc} 0.06836616  0.8194444 1.1555238
+43 {maint=high,                                                     
+    doors=2}        => {class=unacc} 0.05214368  0.8035714 1.1331408
+44 {maint=high,                                                     
+    doors=3,                                                        
+    lug_boot=med}   => {class=unacc} 0.01853998  0.8000000 1.1281046
+45 {lug_boot=small} => {class=unacc} 0.26419467  0.7944251 1.1202432
+46 {doors=2}        => {class=unacc} 0.20162225  0.7802691 1.1002814
+47 {doors=3,                                                        
+    lug_boot=med}   => {class=unacc} 0.07184241  0.7750000 1.0928513
+48 {buying=high,                                                    
+    doors=3}        => {class=unacc} 0.04634994  0.7692308 1.0847159
+49 {buying=high}    => {class=unacc} 0.19119351  0.7638889 1.0771832
+50 {buying=high,                                                    
+    persons=4,                                                      
+    safety=high}    => {class=acc}   0.02085747  0.7500000 3.4798387
+51 {maint=high,                                                     
+    doors=3,                                                        
+    safety=med}     => {class=unacc} 0.01738123  0.7500000 1.0575980
+52 {maint=high}     => {class=unacc} 0.18424102  0.7361111 1.0380129
+53 {doors=3,                                                        
+    safety=med}     => {class=unacc} 0.06604867  0.7125000 1.0047181
+54 {doors=3}        => {class=unacc} 0.16917729  0.7019231 0.9898033
