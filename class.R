@@ -2,29 +2,20 @@ rm(list=ls(all=TRUE));
 library(arules);
 source("rule.R");
 item <- c("buying","maint","doors","persons","lug_boot","safety");
+totalRules <- matrix(ncol = 7,nrow = length(totalRule));
+names(totalRules) <- c(item,"class");
 
-index <- function(var)
+##build rule model
+for( i in 1:length(totalRule))
 {
-  indices <- 0;
-  for( i in 1:length(var))
-  {
-    indices <- c(indices,which(var[i]==item));
-  }
-  return (indices);
+  var <- totalRule[i]@lhs@itemInfo[totalRule[i]@lhs@data@i+1,]$variables;
+  var <- trimws(var);
+  lev <- totalRule[i]@lhs@itemInfo[totalRule[i]@lhs@data@i+1,]$levels;
+  lev <- trimws(lev);
+  class <- totalRule[i]@rhs@itemInfo[totalRule[i]@rhs@data@i+1,]$levels;
+  class <- trimws(class);
+  totalRules[i,c(match(var, item),7)] <- c(lev,class);
 }
 
-classify <- function(object)
-{
-  for( i in 1:length(totalRule))
-  {
-    var <- totalRule[i]@lhs@itemInfo[totalRule[i]@lhs@data@i+1,]$variables;
-    var <- trimws(var);
-    lev <- totalRule[i]@lhs@itemInfo[totalRule[i]@lhs@data@i+1,]$levels;
-    lev <- trimws(lev);
-    judge <- (lev == object[index(var)]);
-    if(all(judge))
-    {
-      return (i);
-    }
-  }
-}
+##Output totalRule
+write.csv(totalRules,"totalRules.csv",row.names = FALSE);
