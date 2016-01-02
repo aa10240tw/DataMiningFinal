@@ -1,5 +1,7 @@
-library(shiny);
 rm(list=ls(all=TRUE));
+library(shinyapps);
+library(rsconnect);
+library(shiny);
 shinyServer(function(input, output){
   predict <- function(){
     object <- c(input$buying,input$maint,input$doors,input$persons,

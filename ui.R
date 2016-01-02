@@ -1,4 +1,6 @@
 rm(list=ls(all=TRUE));
+library(shinyapps);
+library(rsconnect);
 library(shiny);
 shinyUI(fluidPage(
   tags$head(
